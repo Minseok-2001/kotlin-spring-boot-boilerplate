@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.*
 class UserController(
 	private val userService: UserService
 ) {
-
-
 	@Operation(
 		summary = "Get current user information",
 		description = "Retrieves the information of the currently authenticated user"
