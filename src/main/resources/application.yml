@@ -57,7 +57,7 @@ spring:
 
 
 jwt:
-  secret: secret
+  secret: your-secret-key-asdhjkodfsafdASDVgdnskvjdsnflsdf
   accessTokenExpiration: 86400000
   refreshTokenExpiration: 864000000
 
