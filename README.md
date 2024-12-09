@@ -38,49 +38,6 @@ JWT-based security, OAuth2 social login, and a clean separation of responsibilit
 
 ---
 
-## Project Structure
-
-```
-src/
-├── main/
-│   ├── kotlin/
-│   │   └── dev.kotlinspringbootboilerplate/
-│   │       ├── KotlinSpringBootBoilerplateApplication.kt
-│   │       ├── application/
-│   │       │   └── service/
-│   │       │       ├── OAuthUserInfoFactory.kt
-│   │       │       ├── RandomNicknameGenerator.kt
-│   │       │       └── UserService.kt
-│   │       ├── domain/
-│   │       │   ├── model/
-│   │       │   └── repository/
-│   │       │       └── UserRepository.kt
-│   │       ├── infrastructure/
-│   │       │   ├── config/
-│   │       │   ├── persistence/
-│   │       │   │   ├── adapter/
-│   │       │   │   ├── entity/
-│   │       │   │   └── repository/
-│   │       │   ├── security/
-│   │       │   │   ├── JwtAuthenticationFilter.kt
-│   │       │   │   ├── JwtTokenService.kt
-│   │       │   │   └── SocialLoginService.kt
-│   │       ├── presentation/
-│   │       │   ├── controller/
-│   │       │   └── dto/
-│   │       └── repository/
-│   └── resources/
-│       ├── application.yml
-│       └── db/
-│           └── migration/
-│               └── V1__init.sql
-└── test/
-    └── kotlin/
-        └── dev.kotlinspringbootboilerplate/
-```
-
----
-
 ## How to Use
 
 ### Prerequisites

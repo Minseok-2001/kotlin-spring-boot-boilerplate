@@ -1,11 +1,10 @@
 package dev.kotlinspringbootboilerplate.infrastructure.security
 
-import dev.kotlinspringbootboilerplate.application.service.OAuthUserInfoFactory
-import dev.kotlinspringbootboilerplate.application.service.RandomNicknameGenerator
 import dev.kotlinspringbootboilerplate.domain.model.OAuthProvider
 import dev.kotlinspringbootboilerplate.domain.model.OAuthUserInfo
 import dev.kotlinspringbootboilerplate.domain.model.User
 import dev.kotlinspringbootboilerplate.domain.repository.UserRepository
+import dev.kotlinspringbootboilerplate.infrastructure.service.RandomNicknameGenerator
 import jakarta.transaction.Transactional
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest

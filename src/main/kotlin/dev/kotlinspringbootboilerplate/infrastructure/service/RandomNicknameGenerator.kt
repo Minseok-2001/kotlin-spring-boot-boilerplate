@@ -1,4 +1,4 @@
-package dev.kotlinspringbootboilerplate.application.service
+package dev.kotlinspringbootboilerplate.infrastructure.service
 
 import org.springframework.stereotype.Service
 import kotlin.random.Random

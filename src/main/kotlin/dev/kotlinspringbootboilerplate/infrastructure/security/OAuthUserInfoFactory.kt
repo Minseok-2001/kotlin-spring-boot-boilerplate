@@ -1,4 +1,4 @@
-package dev.kotlinspringbootboilerplate.application.service
+package dev.kotlinspringbootboilerplate.infrastructure.security
 
 import dev.kotlinspringbootboilerplate.domain.model.OAuthProvider
 import dev.kotlinspringbootboilerplate.domain.model.OAuthUserInfo
