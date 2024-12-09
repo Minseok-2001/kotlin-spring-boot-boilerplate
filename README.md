@@ -1,14 +1,14 @@
-# DDD Kotlin Spring Boot Boilerplate
+# Kotlin Spring Boot Boilerplate
 
-This repository provides a boilerplate implementation of a backend service using Kotlin, Spring Boot, and a
-Domain-Driven Design (DDD) layered architecture. It is designed to offer a robust starting point for projects requiring
+This repository provides a boilerplate implementation of a backend service using Kotlin, Spring Boot.
+It is designed to offer a robust starting point for projects requiring
 JWT-based security, OAuth2 social login, and a clean separation of responsibilities.
 
 ---
 
 ## Key Features
 
-### Architectural Pattern: DDD Layered Architecture
+### Architectural Pattern
 
 - **Presentation Layer**: Handles HTTP requests via REST controllers and manages data transfer objects (DTOs).
 - **Application Layer**: Manages use cases and service orchestration without containing core business logic.
