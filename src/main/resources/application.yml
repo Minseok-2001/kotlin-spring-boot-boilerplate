@@ -1,0 +1,73 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
+
+spring:
+  jpa:
+    database: postgresql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase?characterEncoding=UTF-8
+    username: myuser
+    password: secret
+  application:
+    name: test
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: your-google-client-id
+            client-secret: your-google-client-secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://localhost:8080/login/oauth2/code/google"
+            scope:
+              - email
+              - profile
+          apple:
+            client-id: your-apple-client-id
+            client-secret: your-apple-client-secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http:localhost:8080/login/oauth2/code/{registrationId}"
+            scope:
+              - email
+              - name
+
+
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
+          apple:
+            authorization-uri: https://appleid.apple.com/auth/authorize
+            token-uri: https://appleid.apple.com/auth/token
+            user-info-uri: https://appleid.apple.com/auth/userinfo
+            user-name-attribute: sub
+
+
+jwt:
+  secret: secret
+  accessTokenExpiration: 86400000
+  refreshTokenExpiration: 864000000
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /api
+    disable-swagger-default-url: true
+    display-request-duration: true
+  packages-to-scan: dev.kotlinspringbootboilerplate
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
