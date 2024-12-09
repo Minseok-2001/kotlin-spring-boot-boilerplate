@@ -1,4 +1,7 @@
-package dev.kotlinspringbootboilerplate.domain.model
+package dev.kotlinspringbootboilerplate.infrastructure.security.model
+
+import dev.kotlinspringbootboilerplate.domain.model.OAuthProvider
+import dev.kotlinspringbootboilerplate.domain.model.OAuthUserInfo
 
 data class AppleOAuthUserInfo(
 	override val id: String,

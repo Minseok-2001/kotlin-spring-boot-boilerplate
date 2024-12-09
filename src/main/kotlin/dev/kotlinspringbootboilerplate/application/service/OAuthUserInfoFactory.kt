@@ -1,9 +1,9 @@
 package dev.kotlinspringbootboilerplate.application.service
 
-import dev.kotlinspringbootboilerplate.domain.model.AppleOAuthUserInfo
-import dev.kotlinspringbootboilerplate.domain.model.GoogleOAuthUserInfo
 import dev.kotlinspringbootboilerplate.domain.model.OAuthProvider
 import dev.kotlinspringbootboilerplate.domain.model.OAuthUserInfo
+import dev.kotlinspringbootboilerplate.infrastructure.security.model.AppleOAuthUserInfo
+import dev.kotlinspringbootboilerplate.infrastructure.security.model.GoogleOAuthUserInfo
 
 
 object OAuthUserInfoFactory {
